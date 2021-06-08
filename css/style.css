@@ -568,6 +568,7 @@ body {
 .conect-social {
   color: var(--adres-color);
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 .des {
   display: flex;
@@ -815,4 +816,10 @@ body {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+.div-footer-social {
+  display: flex;
+  width: 570px;
+  height: 86px;
+  margin-left: 93px;
 }
