@@ -374,9 +374,15 @@
     </ul>
 
 </div>
-<div class="div-footer-social">
-    <h3 class="conect-social">Подпишитесь на рассылку</h3>
-</div>
+<form class="div-footer-social">
+    <b class="conect-social">ПОДПИШИТЕСЬ НА РАССЫЛКА</b>
+    <input type="email" name="email-social" class="email-social" min="2" placeholder="E-mail" required>
+    <button type="submit" class="butn-email">
+        <svg class="mail-bt">
+            <use href="./images/gorup.svg#icon-group" ></use>
+        </svg>
+    </button>
+</form>
 </div>
 
 </footer>
@@ -421,7 +427,7 @@
                 Комментарий 
                 <textarea name="user-message" class="modal-form-message" placeholder="Введите текст"></textarea>
             </label> 
-            <input type="checkbox" name="user-policy" class="modal-form-checkbox" id="checkbox-policy" required >
+            <input type="checkbox" name="user-policy" class="modal-form-checkbox visually-hidden" id="checkbox-policy" required >
                 <label for="checkbox-policy" class="modal-form-sheckbox-policy">Соглашаюсь с рассылкой и принимаю 
                     <a class="modal-form-policy-link" href="#"> Условия договора</a></label>
                    <button type="submit" class="modal-form-btn">Отправить</button>
