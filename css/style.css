@@ -572,12 +572,14 @@ body {
 .conect {
   width: 206px;
   height: 80px;
+  font-style: 14px;
 }
 .foter-con {
   display: flex;
   align-items: baseline;
 }
 .conect-social {
+  font-style: 14px;
   color: var(--adres-color);
   margin-bottom: 20px;
   text-transform: uppercase;
