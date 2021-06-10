@@ -172,10 +172,7 @@ body {
   fill: var(--primery-text-color);
 }
 .tel-link {
-  display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: var(--text-two-color);
   font-weight: 500;
   font-size: 14px;
@@ -823,15 +820,31 @@ body {
 
   color: #757575;
 }
+.modal-form-checkbox {
+  display: block;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  border: 2px solid var(--adres-color);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .modal-form-checkbox:checked + .modal-form-sheckbox-policy::before {
+  background-image: url("../images/Vector.svg");
   background-color: var(--primery-text-color);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   border: transparent;
-  background-image: url("../images/checked.svg");
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.modal-form-checkbox:focus + .modal-form-sheckbox-policy::before,
+.modal-form-checkbox:hover + .modal-form-sheckbox-policy::before {
+  border-color: var(--primery-text-color);
+}
 .modal-form-btn {
   width: 200px;
   margin: 0 auto;
